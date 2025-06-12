@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Réservation d’hôtel</title>
+  <link rel="stylesheet" href="formulaire.css">
+</head>
+<body>
+    <header class="navboss">
+    
+    <div>
+    <section id="tete">
+       <div id="logo">
+        <img src="header.jpg">
+        </div>
+        <nav class="navboss">
+        <h1 class="logo">Tourisme</h1>
+        <ul class="nav">
+            <li><a href="Accueil.html" class="effet1">Accueil</a></li>
+            <li><a href="Patrimoine.html" class="effet2">Patrimoine</a></li>
+            <li><a href="reservation.html" class="effet3">Réservation</a></li>
+            <li><a href="Galerie.html" class="effet4">Galerie</a></li>
+        </ul>
+        </nav>
+        <br>
+        <h1>Formulaire de Réservation d'Hotel</h1>
+    <form action="#" method="post">
+        <label for="nom">Nom complet :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Adresse email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tel">Téléphone :</label>
+        <input type="tel" id="tel" name="tel" required>
+
+        <label for="date-arrivee">Date d’arrivée :</label>
+        <input type="date" id="date-arrivee" name="date_arrivee" required>
+
+        <label for="date-depart">Date de départ :</label>
+        <input type="date" id="date-depart" name="date_depart" required>
+
+        <label for="personnes">Nombre de personnes :</label>
+        <input type="number" id="personnes" name="personnes" min="1" required>
+
+        <label for="chambre">Type de chambre :</label>
+    <select id="chambre" name="chambre" required>
+        <option value="">-- Choisir --</option>
+        <option value="standard">Standard</option>
+        <option value="double">Double</option>
+        <option value="suite">Suite</option>
+    </select>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <button type="submit">Réserver</button>
+    </form>
+    </section>
+    </div>
+</header>
+</body>
+</html>

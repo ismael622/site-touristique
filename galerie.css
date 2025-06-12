@@ -1,0 +1,132 @@
+.toutgalerie img{
+    width:100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0);
+    transition: transform 0.3s;
+}
+.toutgalerie{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    gap:10px;
+    padding: 20px;
+}
+.toutgalerie img:hover{
+    transform: scale(1.05);
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+.tete .A {
+  background-color: #ffbf00;
+  transform: scale(1.05);
+}
+.navboss {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0c5b4a;
+  padding: 15px 30px;
+}
+
+.navboss .nav li a:hover {
+  text-decoration: underline;
+}
+.navboss .nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.tete .A {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  background-color: #ffd700;
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.accueil .intro {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+.navboss .nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+    margin-right: 11px;
+}
+.section.accueil {
+  background-image: url('bobo-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 30px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.navboss .logo {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.section.accueil::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.tete-div h1 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+.tete-div{
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.paragraphe{
+  font-weight: bold;
+}
+#logo img{
+  width: 100%;
+  height:300px;
+  margin-top: 0px;
+}
+footer {
+  background-color: #0c5b4a;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.effet1:hover{
+    background-color: red;
+}
+.effet2:hover{
+    background-color: yellow;
+}
+.effet3:hover{
+    background-color: green;
+}
+.effet4:hover{
+    background-color: blue;
+}
+
+
